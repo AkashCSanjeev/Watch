@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/oxyCard"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="60dp"
+        app:cardBackgroundColor="#AFE1AF"
+        app:layout_constraintBottom_toBottomOf="@+id/heartCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/heartCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/oxyImage"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/oxyLabel"
+                app:layout_constraintEnd_toEndOf="@+id/oxyLabel"
+                app:layout_constraintStart_toStartOf="@+id/oxyLabel"
+                app:srcCompat="@drawable/oxygen_black" />
+
+            <TextView
+                android:id="@+id/oxyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="#0F0F0F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/oxyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Oxygen Level"
+                android:textColor="#0F0F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oxyText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/heartCard"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="#AFE1AF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/rateImage"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/heartLabel"
+                app:layout_constraintEnd_toEndOf="@+id/heartLabel"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="@+id/heartLabel"
+                app:srcCompat="@drawable/heart_rate_black" />
+
+            <TextView
+                android:id="@+id/rateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/heartLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Heart Rate"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rateText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/touchCard"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="#AFE1AF"
+        app:layout_constraintBottom_toTopOf="@+id/Lightcard"
+        app:layout_constraintEnd_toEndOf="@+id/heartCard"
+        app:layout_constraintStart_toStartOf="@+id/heartCard"
+        app:layout_constraintTop_toBottomOf="@+id/heartCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/touchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/touchImage"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/touchLabel"
+                app:layout_constraintEnd_toEndOf="@+id/touchLabel"
+                app:layout_constraintStart_toStartOf="@+id/touchLabel"
+                app:srcCompat="@drawable/touch_black" />
+
+            <TextView
+                android:id="@+id/touchLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Touch Time"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/touchText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/soundCard"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="#AFE1AF"
+        app:layout_constraintBottom_toBottomOf="@+id/Lightcard"
+        app:layout_constraintEnd_toEndOf="@+id/tempCard"
+        app:layout_constraintTop_toTopOf="@+id/Lightcard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/soundImage"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/soundLabel"
+                app:layout_constraintEnd_toEndOf="@+id/soundLabel"
+                app:layout_constraintStart_toStartOf="@+id/soundLabel"
+                app:srcCompat="@drawable/sound_black" />
+
+            <TextView
+                android:id="@+id/soundText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/soundLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Sound Intensity"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/soundText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Lightcard"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="100dp"
+        app:cardBackgroundColor="#AFE1AF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/touchCard"
+        app:layout_constraintStart_toStartOf="@+id/touchCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/lightImage"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/lightLabel"
+                app:layout_constraintEnd_toEndOf="@+id/lightLabel"
+                app:layout_constraintStart_toStartOf="@+id/lightLabel"
+                app:srcCompat="@drawable/light_black" />
+
+            <TextView
+                android:id="@+id/lightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lightLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Light Intensity"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lightText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tempCard"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="#AFE1AF"
+        app:layout_constraintBottom_toBottomOf="@+id/touchCard"
+        app:layout_constraintEnd_toEndOf="@+id/oxyCard"
+        app:layout_constraintTop_toTopOf="@+id/touchCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/temptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/tempImage"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/tempLabel"
+                app:layout_constraintEnd_toEndOf="@+id/tempLabel"
+                app:layout_constraintStart_toStartOf="@+id/tempLabel"
+                app:srcCompat="@drawable/temp_black" />
+
+            <TextView
+                android:id="@+id/tempLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Temperature"
+                android:textColor="#0F0F0F"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/temptext" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
